@@ -1,0 +1,84 @@
+.container-fluid {
+    margin-bottom: 3em;
+}
+
+.h2-cursos {
+    padding: 4px 40px;
+    color: rgb(48, 48, 48);
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1em 0em 1em 0em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0em 5em;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2em rgba(70, 26, 0, 0.1);
+    border-radius: 2em;
+    min-width: 20em;
+    max-width: 24em;
+    height: 28em;
+    padding: 2em 1.5em;
+    margin-top: 3em;
+    margin-right: 1em;
+}
+
+.box img {
+    display: flex;
+    margin: 0 auto;
+    width: 22%;
+}
+
+.box h2,
+p {
+    color: rgb(48, 48, 48);
+    margin: 0.5em 0 0 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.box h2 {
+    margin: 0.5em;
+    font-weight: 400;
+    font-size: 1.7em;
+}
+
+.box p {
+    font-size: 1.1em;
+    color: rgb(61, 61, 61);
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box:hover {
+    transition: 0.4s ease-in-out;
+    transform: translateY(-3%);
+    box-shadow: 0 0 2em rgba(230, 122, 60, 0.2);
+}
+
+.box:hover img {
+    transition: 0.5s ease-in-out;
+    width: 24%;
+}
+
+@media (max-width:600px){
+    .h2-cursos{
+        font-size:2.5;
+    }
+    .box h2 {
+    margin: 0.5em;
+    font-weight: 400;
+    font-size: 1.5em;
+    }
+}
